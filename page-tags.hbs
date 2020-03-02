@@ -13,9 +13,11 @@
 
 <main id="site-main" class="site-main outer" role="main">
   <div class="inner">
-    <header class="post-full-header">
-      <h1 class="post-full-title">{{title}}</h1>
-    </header>
+    {{!-- commented by NTK 2020/03/02
+        <header class="post-full-header">
+        <h1 class="post-full-title">{{title}}</h1>
+        </header>
+    --}}
        <div class="post-feed">
     	{{#get 'tags' limit='all' include='count.posts' order='count.posts desc'}}
     	{{#foreach tags}}
